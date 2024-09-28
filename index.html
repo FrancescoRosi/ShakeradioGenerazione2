@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/flash.css">
+        <link rel="stylesheet" href="/css/lite-youtube-embed.min.css">
+        <link rel="stylesheet" href="/css/plyr.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Shakeradio Generazione 2</title>
+    </head>
+    <body>
+        <div id="home">
+            <div id="logo">
+                <picture>
+                    <source type="image/avif" srcset="/images/logo.avif">
+                    <source type="image/png" srcset="/images/logo.png">
+                    <img src="/images/logo.png" loading="lazy">
+                </picture>
+                <h2>GENERAZIONE 2</h2>
+            </div>
+            <a id="play">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="320 -760 440 560">
+                    <path d="M320-200v-560l440 280-440 280Z"></path>
+                </svg>
+                Riproduci Shakeradio
+            </a>
+        </div>  
+        <div id="inviteToScroll">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="240 -760 480 536">
+                <path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"></path>
+            </svg>
+            <h2>Scorri per il media del giorno</h2>
+        </div>
+        <div id="scroll">
+            <h2 class="slideable">Media del giorno</h2>
+            <div id="media">
+                <div class="suggested1 slideable">
+                    <h4>Shakerando in metro, by Antoine.</h4>
+                </div>
+                <div class="suggested2 slideable">
+                    <h4>YTP di Shakerando (Rhove ha esagerato), by Sasso Strappato.</h4>
+                </div>
+                <div class="suggested3 slideable">
+                    <h4>YTP di Shakerando (Rhove sta Shakerando™ troppo), by Ale Poops.</h4>
+                </div>
+                <div class="suggested4 slideable">
+                    <h4>Shakerando cantata in versione goliardica da GSkianto, aka il Maestro™. Clip caricata da Riccardovent.</h4>
+                </div>
+                <div class="suggested5 slideable">
+                    <h4>Shakerando, in versione molto <i>raffinata</i>, al piano, by Pietro Morello.</h4>
+                </div>
+                <div class="suggested6 slideable">
+                    <picture>
+                        <source type="image/avif" srcset="/images/meme.avif">
+                        <source type="image/jpeg" srcset="/images/meme.jpg">
+                        <img src="/images/meme.jpg" loading="lazy">
+                    </picture>
+                </div>
+                <div class="suggested7 slideable">
+                    <h4>
+                        Salutiamo il cugino di un amico che, per supportare la nostra radio indipendente, ha riempito questa sua pagina di diario con "SHAKERADIO" dall'inizio alla fine. Dice di averci messo un'ora.
+                        <span class="smol">(clicca per ingrandire)</span>
+                    </h4>
+                    <a href="/images/scomix.jpg" target="_blank">
+                        <picture>
+                            <source type="image/avif" srcset="/images/scomix.avif">
+                            <source type="image/jpeg" srcset="/images/scomix.jpg">
+                            <img src="/images/scomix.jpg" loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-box">
+                <div class="modal-header">
+                    <h1 class="modal-title slideable">Contenuti aggiuntivi necessari</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="200 -760 560 560" class="modal-close">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content slideable">
+                    <span class="modal-text">Poiché è la prima volta che visiti questo sito web, abbiamo bisogno di scaricare alcuni dati aggiuntivi (56.61 MB). <b>Questa operazione impiega meno di un minuto sulla maggior parte delle connessioni Internet moderne.</b></span>
+                    <br>
+                    <span class="modal-text">Componente <span id="component-progress">1</span> di 2</span>
+                    <div class="progress loading">
+                        <div class="percentage">Preparazione download...</div>
+                        <div class="loaded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-player">
+            <div class="video-player-box">
+                <video id="player"></video>
+                <video id="bumper-preload"></video>
+                <div class="player-overlays">
+                    <picture>
+                        <source type="image/avif" srcset="/images/player-logo.avif">
+                        <source type="image/png" srcset="/images/player-logo.png">
+                        <img src="/images/player-logo.png" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <script src="/js/pace.min.js"></script>
+        <script src="/js/lite-youtube-embed.min.js"></script>
+        <script src="/js/plyr.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
