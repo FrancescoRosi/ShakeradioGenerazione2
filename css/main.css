@@ -313,7 +313,9 @@ h2 {
 #inviteToScroll {
     position: absolute;
     bottom: 1rem;
-    width: 100vw;
+    cursor: pointer;
+    inset-area: bottom;
+    position-area: bottom;
     text-align: center;
     transform: translateY(8rem);
     animation: inviteToScrollLoad 1s cubic-bezier(1,0,0,1) 3s forwards, bounce 2s infinite 4s;

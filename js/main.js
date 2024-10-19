@@ -29,6 +29,8 @@ window.addEventListener("wheel", e => {
     };
 });
 
+document.querySelector("#inviteToScroll").addEventListener("click", () => popup());
+
 let touchStartY = 0;
 let touchEndY = 0;
 window.addEventListener("touchstart", e => {
