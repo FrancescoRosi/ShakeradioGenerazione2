@@ -544,6 +544,7 @@ br {
 .player-overlays img {
     width: 30%;
     float: right;
+    margin-top: 1rem;
 }
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
     background: var(--shakeradio-pink);
